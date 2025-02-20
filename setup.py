@@ -125,14 +125,14 @@ if sys.argv[-1] == 'tag':
     os.system("git push --tags")
     sys.exit()
 
-README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
-CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst')).read()
+# README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
+# CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst')).read()
 
 setup(
     name='openedx-survey',
     version=VERSION,
     description="""Management of user-triggered asynchronous tasks in Django projects""",
-    long_description=README + '\n\n' + CHANGELOG,
+    long_description='',
     long_description_content_type='text/x-rst',
     author='edX',
     author_email='oscm@edx.org',

@@ -32,14 +32,14 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.sessions',
-    'repo_name',
+    'survey',
 )
 
 LOCALE_PATHS = [
-    root('repo_name', 'conf', 'locale'),
+    root('survey', 'conf', 'locale'),
 ]
 
-ROOT_URLCONF = 'repo_name.urls'
+ROOT_URLCONF = 'survey.urls'
 
 SECRET_KEY = 'insecure-secret-key'
 
