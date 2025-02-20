@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Package metadata for repo_name.
+Package metadata for survey.
 """
 import os
 import re
@@ -117,7 +117,7 @@ def is_requirement(line):
     return line and line.strip() and not line.startswith(("-r", "#", "-e", "git+", "-c"))
 
 
-VERSION = get_version('repo_name', '__init__.py')
+VERSION = get_version('survey', '__init__.py')
 
 if sys.argv[-1] == 'tag':
     print("Tagging the version on github:")
@@ -129,15 +129,15 @@ README = open(os.path.join(os.path.dirname(__file__), 'README.rst'), encoding="u
 CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst'), encoding="utf8").read()
 
 setup(
-    name='repo_name',
+    name='openedx-survey',
     version=VERSION,
     description="""One-line description for README and other doc files.""",
     long_description=README + '\n\n' + CHANGELOG,
     author='Open edX Project',
     author_email='oscm@openedx.org',
-    url='https://github.com/openedx/repo_name',
+    url='https://github.com/openedx/openedx-survey',
     packages=find_packages(
-        include=['repo_name', 'repo_name.*'],
+        include=['survey', 'survey.*'],
         exclude=["*tests"],
     ),
 
