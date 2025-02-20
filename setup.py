@@ -125,8 +125,8 @@ if sys.argv[-1] == 'tag':
     os.system("git push --tags")
     sys.exit()
 
-README = open(os.path.join(os.path.dirname(__file__), 'README.rst'), encoding="utf8").read()
-CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst'), encoding="utf8").read()
+README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
+CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst')).read()
 
 setup(
     name='openedx-survey',
@@ -143,7 +143,6 @@ setup(
 
     include_package_data=True,
     install_requires=load_requirements('requirements/base.in'),
-    python_requires=">=3.12",
     license="AGPL 3.0",
     zip_safe=False,
     keywords='Python edx',
