@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a0d9532-abd9-4114-96d9-92492dfff1d4" name="Changes" comment="feat!: adding survey">
+      <change afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/openedx-survery.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coverage.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/default.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/_static/theme_overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/changelog.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/concepts/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/decisions.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/decisions/0001-purpose-of-this-repo.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/decisions/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/getting_started.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/how-tos/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/internationalization.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/quickstarts/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/readme.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/references/index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/testing.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openedx_survey.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openedx_survey.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openedx_survey.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openedx_survey.egg-info/not-zip-safe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openedx_survey.egg-info/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/openedx_survey.egg-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.rst" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/base.in" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/ci.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/ci.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/dev.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/doc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/doc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/quality.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/quality.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/tests/factories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/tests/test_models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/tests/test_signals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/tests/test_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/tests/test_views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/survey/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tox.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tox.ini" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2tJfPRwcakmcoMtY0CWcqvapAEQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/awais.qureshi/Documents/devstack/openedx-survery&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/survey" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a0d9532-abd9-4114-96d9-92492dfff1d4" name="Changes" comment="" />
+      <created>1740075073280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740075073280</updated>
+    </task>
+    <task id="LOCAL-00001" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740078202653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740078202653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740078444676</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740078444676</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740078529269</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740078529269</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740078942764</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740078942764</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740079359060</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740079359060</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740080859444</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740080859444</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740081097484</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740081097484</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740082092811</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740082092811</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740082253151</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740082253151</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740082937357</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740082937357</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740083077885</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740083077885</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat!: adding survey">
+      <option name="closed" value="true" />
+      <created>1740083495240</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740083495240</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat!: adding survey" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat!: adding survey" />
+  </component>
+</project>
