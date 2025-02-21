@@ -59,3 +59,5 @@ TEMPLATES = [{
         ],
     },
 }]
+
+ALLOWED_HOSTS  = ['*']

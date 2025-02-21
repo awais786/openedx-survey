@@ -10,7 +10,26 @@ django==4.2.19
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
-openedx-atlas==0.6.2
+dnspython==2.7.0
+    # via pymongo
+edx-opaque-keys==2.11.0
     # via -r requirements/base.in
+lxml[html-clean,html_clean]==5.3.1
+    # via
+    #   -r requirements/base.in
+    #   lxml-html-clean
+lxml-html-clean==0.4.1
+    # via lxml
+pbr==6.1.1
+    # via stevedore
+pymongo==4.11.1
+    # via edx-opaque-keys
 sqlparse==0.5.3
     # via django
+stevedore==5.4.1
+    # via edx-opaque-keys
+typing-extensions==4.12.2
+    # via edx-opaque-keys
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools

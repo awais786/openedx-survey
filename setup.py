@@ -1,20 +1,24 @@
 #!/usr/bin/env python
-# pylint: disable=C0111,W6005,W6100
-
-
+"""
+Package metadata for survey.
+"""
 import os
 import re
 import sys
 
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 def get_version(*file_paths):
     """
-    Extract the version string from the file at the given relative path fragments.
+    Extract the version string from the file.
+
+    Input:
+     - file_paths: relative path fragments to file with
+                   version string
     """
     filename = os.path.join(os.path.dirname(__file__), *file_paths)
-    version_file = open(filename).read()
+    version_file = open(filename, encoding="utf8").read()
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
                               version_file, re.M)
     if version_match:
@@ -30,8 +34,6 @@ def load_requirements(*requirements_paths):
     with -c in the requirements files.
     Returns a list of requirement strings.
     """
-    # UPDATED VIA SEMGREP - if you need to remove/modify this method remove this line and add a comment specifying why.
-
     # e.g. {"django": "Django", "confluent-kafka": "confluent_kafka[avro]"}
     by_canonical_name = {}
 
@@ -112,9 +114,7 @@ def is_requirement(line):
         bool: True if the line is not blank, a comment,
         a URL, or an included file
     """
-    # UPDATED VIA SEMGREP - if you need to remove/modify this method remove this line and add a comment specifying why
-
-    return line and line.strip() and not line.startswith(('-r', '#', '-e', 'git+', '-c'))
+    return line and line.strip() and not line.startswith(("-r", "#", "-e", "git+", "-c"))
 
 
 VERSION = get_version('survey', '__init__.py')
@@ -125,35 +125,36 @@ if sys.argv[-1] == 'tag':
     os.system("git push --tags")
     sys.exit()
 
-# README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
-# CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst')).read()
+README = open(os.path.join(os.path.dirname(__file__), 'README.rst'), encoding="utf8").read()
+CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst'), encoding="utf8").read()
 
 setup(
     name='openedx-survey',
     version=VERSION,
-    description="""Management of user-triggered asynchronous tasks in Django projects""",
-    long_description='',
-    long_description_content_type='text/x-rst',
-    author='edX',
-    author_email='oscm@edx.org',
+    description="""One-line description for README and other doc files.""",
+    long_description=README + '\n\n' + CHANGELOG,
+    author='Open edX Project',
+    author_email='oscm@openedx.org',
     url='https://github.com/openedx/openedx-survey',
-    packages=[
-        'survey',
-    ],
+    packages=find_packages(
+        include=['survey', 'survey.*'],
+        exclude=["*tests"],
+    ),
+
     include_package_data=True,
     install_requires=load_requirements('requirements/base.in'),
-    license="Apache Software License 2.0",
+    python_requires=">=3.12",
+    license="AGPL 3.0",
     zip_safe=False,
-    keywords='Django edx',
+    keywords='Python edx',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 3 - Alpha',
         'Framework :: Django',
         'Framework :: Django :: 4.2',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
         'Natural Language :: English',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
     ],
 )

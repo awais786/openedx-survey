@@ -4,7 +4,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: ""
 metadata:
-  name: 'repo_name'
+  name: 'openedx-survey'
   description: "One-line description for README and other doc files."
   annotations:
     # The openedx.org/release key is described in OEP-10:

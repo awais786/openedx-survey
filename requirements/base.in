@@ -2,4 +2,6 @@
 -c constraints.txt
 
 Django             # Web application framework
+lxml[html_clean]                    # XML parser
+edx-opaque-keys
 

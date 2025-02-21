@@ -1,6 +1,6 @@
 .PHONY: clean clean_tox compile_translations coverage diff_cover docs dummy_translations \
         extract_translations fake_translations help pii_check pull_translations \
-        quality requirements selfcheck test test-all upgrade validate install_transifex_client compile
+        quality requirements selfcheck test test-all upgrade validate install_transifex_client
 
 .DEFAULT_GOAL := help
 
@@ -53,24 +53,6 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 	sed '/^[dD]jango==/d' requirements/test.txt > requirements/test.tmp
 	mv requirements/test.tmp requirements/test.txt
 
-
-compile: export CUSTOM_COMPILE_COMMAND=make compile
-compile: ## compile the requirements/*.txt files without upgrading
-	pip install -qr requirements/pip-tools.txt
-	$(PIP_COMPILE) --allow-unsafe -o requirements/pip.txt requirements/pip.in
-	# Make sure to compile files after any other files they include!
-	$(PIP_COMPILE) -o requirements/pip-tools.txt requirements/pip-tools.in
-	pip install -qr requirements/pip.txt
-	pip install -qr requirements/pip-tools.txt
-	$(PIP_COMPILE) --allow-unsafe -o requirements/base.txt requirements/base.in
-	$(PIP_COMPILE) --allow-unsafe -o requirements/test.txt requirements/test.in
-	$(PIP_COMPILE) --allow-unsafe -o requirements/ci.txt requirements/ci.in
-	$(PIP_COMPILE) --allow-unsafe -o requirements/dev.txt requirements/dev.in
-	# Let tox control the Django version for tests
-	sed '/^[dD]jango==/d' requirements/test.txt > requirements/test.tmp
-	mv requirements/test.tmp requirements/test.txt
-
-
 quality: ## check coding style with pycodestyle and pylint
 	tox -e quality
 
@@ -103,13 +85,13 @@ selfcheck: ## check that the Makefile is well-formed
 
 extract_translations: ## extract strings to be translated, outputting .mo files
 	rm -rf docs/_build
-	cd repo_name && i18n_tool extract --no-segment
+	cd survey && i18n_tool extract --no-segment
 
 compile_translations: ## compile translation files, outputting .po files for each supported language
-	cd repo_name && i18n_tool generate
+	cd survey && i18n_tool generate
 
 detect_changed_source_translations:
-	cd repo_name && i18n_tool changed
+	cd survey && i18n_tool changed
 
 ifeq ($(OPENEDX_ATLAS_PULL),)
 pull_translations: ## Pull translations from Transifex
@@ -117,15 +99,15 @@ pull_translations: ## Pull translations from Transifex
 else
 # Experimental: OEP-58 Pulls translations using atlas
 pull_translations:
-	find repo_name/conf/locale -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
-	atlas pull $(OPENEDX_ATLAS_ARGS) translations/repo_name/repo_name/conf/locale:repo_name/conf/locale
+	find survey/conf/locale -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
+	atlas pull $(OPENEDX_ATLAS_ARGS) translations/openedx-survey/survey/conf/locale:survey/conf/locale
 	python manage.py compilemessages
 
 	@echo "Translations have been pulled via Atlas and compiled."
 endif
 
 dummy_translations: ## generate dummy translation (.po) files
-	cd repo_name && i18n_tool dummy
+	cd survey && i18n_tool dummy
 
 build_dummy_translations: extract_translations dummy_translations compile_translations ## generate and compile dummy translation files
 
