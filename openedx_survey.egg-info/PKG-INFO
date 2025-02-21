@@ -1,6 +1,6 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.2
 Name: openedx-survey
-Version: 3.3.0
+Version: 1.0.0
 Summary: One-line description for README and other doc files.
 Home-page: https://github.com/openedx/openedx-survey
 Author: Open edX Project
@@ -15,11 +15,21 @@ Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or l
 Classifier: Natural Language :: English
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.12
-Requires-Python: >=3.12
+Requires-Python: >=3.11
 License-File: LICENSE.txt
 Requires-Dist: Django
 Requires-Dist: edx-opaque-keys
 Requires-Dist: lxml[html_clean]
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 openedx-survey
 ##############

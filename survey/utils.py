@@ -7,7 +7,7 @@ from django.utils.translation import gettext as _
 from lms.djangoapps.courseware.access import has_access
 from lms.djangoapps.courseware.access_response import AccessError
 from lms.djangoapps.courseware.access_utils import ACCESS_GRANTED
-from lms.djangoapps.survey.models import SurveyAnswer, SurveyForm
+from survey.models import SurveyAnswer, SurveyForm
 
 
 class SurveyRequiredAccessError(AccessError):
