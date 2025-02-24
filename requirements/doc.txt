@@ -36,6 +36,8 @@ coverage[toml]==7.6.12
     # via
     #   -r requirements/test.txt
     #   pytest-cov
+ddt==1.7.2
+    # via -r requirements/test.txt
 django==4.2.19
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
@@ -58,6 +60,12 @@ docutils==0.21.2
     #   sphinx
 edx-opaque-keys==2.11.0
     # via -r requirements/test.txt
+factory-boy==3.3.3
+    # via -r requirements/test.txt
+faker==36.1.1
+    # via
+    #   -r requirements/test.txt
+    #   factory-boy
 id==1.5.0
     # via twine
 idna==3.10
@@ -217,6 +225,10 @@ typing-extensions==4.12.2
     #   beautifulsoup4
     #   edx-opaque-keys
     #   pydata-sphinx-theme
+tzdata==2025.1
+    # via
+    #   -r requirements/test.txt
+    #   faker
 urllib3==2.2.3
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt

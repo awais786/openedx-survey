@@ -3,7 +3,7 @@ Test signal handlers for the survey app
 """
 
 
-from common.djangoapps.student.tests.factories import UserFactory
+from survey.tests.factories import UserFactory
 from lms.djangoapps.survey.models import SurveyAnswer
 from lms.djangoapps.survey.signals import _listen_for_lms_retire
 from lms.djangoapps.survey.tests.factories import SurveyAnswerFactory

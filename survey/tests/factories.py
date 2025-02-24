@@ -1,7 +1,6 @@
 
 # lint-amnesty, pylint: disable=missing-module-docstring
 import factory
-from common.djangoapps.student.tests.factories import UserFactory
 from django.contrib import auth
 from django.test import TestCase
 from django.test.client import RequestFactory

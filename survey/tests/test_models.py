@@ -11,7 +11,7 @@ from django.core.exceptions import ValidationError
 from django.test import TestCase
 from django.test.client import Client
 
-from common.djangoapps.student.tests.factories import UserFactory
+from survey.tests.factories import UserFactory
 from lms.djangoapps.survey.exceptions import SurveyFormNameAlreadyExists, SurveyFormNotFound
 from lms.djangoapps.survey.models import SurveyAnswer, SurveyForm
 
