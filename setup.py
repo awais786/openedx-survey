@@ -145,10 +145,10 @@ setup(
     install_requires=load_requirements('requirements/base.in'),
     entry_points={
         'lms.djangoapp': [
-            "edx_proctoring = survey.apps:SurveyConfig",
+            "survey = survey.apps:SurveyConfig",
         ],
         'cms.djangoapp': [
-            "edx_proctoring = survey.apps:SurveyConfig",
+            "survey = survey.apps:SurveyConfig",
         ],
     },
     python_requires=">=3.11",

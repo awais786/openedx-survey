@@ -13,12 +13,11 @@ class SurveyConfig(AppConfig):
     name = 'survey'
     verbose_name = 'survey'
 
-    # Set LMS urls for LTI endpoints
-    # Urls are under /api/lti_consumer/
+    # Set urls for lms usage
     plugin_app = {
         'url_config': {
             'lms.djangoapp': {
-                'namespace': 'survey',
+                'namespace': None,  # This removes the automatic namespace
                 'relative_path': 'urls',
             }
         }
