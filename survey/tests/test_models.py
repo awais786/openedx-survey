@@ -12,8 +12,8 @@ from django.test import TestCase
 from django.test.client import Client
 
 from survey.tests.factories import UserFactory
-from lms.djangoapps.survey.exceptions import SurveyFormNameAlreadyExists, SurveyFormNotFound
-from lms.djangoapps.survey.models import SurveyAnswer, SurveyForm
+from survey.exceptions import SurveyFormNameAlreadyExists, SurveyFormNotFound
+from survey.models import SurveyAnswer, SurveyForm
 
 
 @ddt.ddt

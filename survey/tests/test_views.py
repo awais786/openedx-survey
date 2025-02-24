@@ -10,7 +10,7 @@ from django.test.client import Client
 from django.urls import reverse
 
 from survey.tests.factories import UserFactory
-from lms.djangoapps.survey.models import SurveyAnswer, SurveyForm
+from survey.models import SurveyAnswer, SurveyForm
 from xmodule.modulestore.tests.django_utils import ModuleStoreTestCase  # lint-amnesty, pylint: disable=wrong-import-order
 from xmodule.modulestore.tests.factories import CourseFactory  # lint-amnesty, pylint: disable=wrong-import-order
 
