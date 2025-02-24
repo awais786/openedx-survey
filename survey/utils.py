@@ -3,10 +3,10 @@ Utilities for determining whether or not a survey needs to be completed.
 """
 
 from django.utils.translation import gettext as _
-
 from lms.djangoapps.courseware.access import has_access
 from lms.djangoapps.courseware.access_response import AccessError
 from lms.djangoapps.courseware.access_utils import ACCESS_GRANTED
+
 from survey.models import SurveyAnswer, SurveyForm
 
 

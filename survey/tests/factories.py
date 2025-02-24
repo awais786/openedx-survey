@@ -2,6 +2,7 @@
 # lint-amnesty, pylint: disable=missing-module-docstring
 import factory
 from django.contrib import auth
+
 from survey.models import SurveyAnswer, SurveyForm
 
 User = auth.get_user_model()

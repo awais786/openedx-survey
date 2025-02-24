@@ -1,8 +1,6 @@
 import sys
 from unittest.mock import Mock
 
-import sys
-from unittest.mock import Mock
 
 def _mock_third_party_modules():
     mock_openedx = Mock()
