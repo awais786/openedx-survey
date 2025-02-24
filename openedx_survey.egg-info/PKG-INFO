@@ -1,4 +1,4 @@
-Metadata-Version: 2.2
+Metadata-Version: 2.1
 Name: openedx-survey
 Version: 1.0.0
 Summary: One-line description for README and other doc files.
@@ -18,18 +18,9 @@ Classifier: Programming Language :: Python :: 3.12
 Requires-Python: >=3.11
 License-File: LICENSE.txt
 Requires-Dist: Django
+Requires-Dist: django-model-utils
 Requires-Dist: edx-opaque-keys
 Requires-Dist: lxml[html_clean]
-Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
-Dynamic: home-page
-Dynamic: keywords
-Dynamic: license
-Dynamic: requires-dist
-Dynamic: requires-python
-Dynamic: summary
 
 openedx-survey
 ##############

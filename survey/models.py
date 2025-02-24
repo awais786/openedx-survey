@@ -6,20 +6,21 @@ Models to support Course Surveys feature
 import logging
 from collections import OrderedDict
 
+from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
 from django.db import models
-
 from lxml import etree
 from model_utils.models import TimeStampedModel
 from opaque_keys.edx.django.models import CourseKeyField
-
-
-from common.djangoapps.student.models import User
-from survey.exceptions import SurveyFormNameAlreadyExists, SurveyFormNotFound
 from openedx.core.djangolib.markup import HTML
+
+from survey.exceptions import SurveyFormNameAlreadyExists, SurveyFormNotFound
 
 log = logging.getLogger("edx.survey")
 
+
+
+User = get_user_model()
 
 class SurveyForm(TimeStampedModel):
     """

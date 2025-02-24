@@ -40,6 +40,9 @@ django==4.2.19
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
+    #   django-model-utils
+django-model-utils==5.0.0
+    # via -r requirements/test.txt
 dnspython==2.7.0
     # via
     #   -r requirements/test.txt
@@ -167,13 +170,13 @@ rfc3986==2.0.0
     # via twine
 rich==13.9.4
     # via twine
-roman-numerals-py==3.0.0
+roman-numerals-py==3.1.0
     # via sphinx
 snowballstemmer==2.2.0
     # via sphinx
 soupsieve==2.6
     # via beautifulsoup4
-sphinx==8.2.0
+sphinx==8.2.1
     # via
     #   -r requirements/doc.in
     #   pydata-sphinx-theme

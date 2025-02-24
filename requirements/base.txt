@@ -10,6 +10,9 @@ django==4.2.19
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
+    #   django-model-utils
+django-model-utils==5.0.0
+    # via -r requirements/base.in
 dnspython==2.7.0
     # via pymongo
 edx-opaque-keys==2.11.0

@@ -34,6 +34,9 @@ django==4.2.19
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/test.txt
+    #   django-model-utils
+django-model-utils==5.0.0
+    # via -r requirements/test.txt
 dnspython==2.7.0
     # via
     #   -r requirements/test.txt

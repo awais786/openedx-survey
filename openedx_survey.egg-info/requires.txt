@@ -1,3 +1,4 @@
 Django
+django-model-utils
 edx-opaque-keys
 lxml[html_clean]
