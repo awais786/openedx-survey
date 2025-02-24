@@ -18,9 +18,12 @@ Classifier: Programming Language :: Python :: 3.12
 Requires-Python: >=3.11
 License-File: LICENSE.txt
 Requires-Dist: Django
+Requires-Dist: Markdown
 Requires-Dist: django-model-utils
 Requires-Dist: edx-opaque-keys
 Requires-Dist: lxml[html_clean]
+Requires-Dist: mako
+Requires-Dist: nh3
 
 openedx-survey
 ##############

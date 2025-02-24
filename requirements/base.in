@@ -5,4 +5,6 @@ Django             # Web application framework
 django-model-utils
 lxml[html_clean]                    # XML parser
 edx-opaque-keys
-
+nh3
+mako                                # Primary template language used for server-side page rendering
+Markdown

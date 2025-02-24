@@ -1,4 +1,7 @@
 Django
+Markdown
 django-model-utils
 edx-opaque-keys
 lxml[html_clean]
+mako
+nh3

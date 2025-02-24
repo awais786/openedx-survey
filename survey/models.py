@@ -14,6 +14,7 @@ from model_utils.models import TimeStampedModel
 from opaque_keys.edx.django.models import CourseKeyField
 
 from survey.exceptions import SurveyFormNameAlreadyExists, SurveyFormNotFound
+from survey.markup import HTML
 
 log = logging.getLogger("edx.survey")
 
@@ -152,7 +153,7 @@ class SurveyForm(TimeStampedModel):
         # make sure the form is wrap in some outer single element
         # otherwise lxml can't parse it
         # NOTE: This wrapping doesn't change the ability to query it
-        tree = etree.fromstring('<div>{}</div>').format(html)
+        tree = etree.fromstring(HTML('<div>{}</div>').format(HTML(html)))
 
         input_fields = (
             tree.findall('.//input') + tree.findall('.//select') +

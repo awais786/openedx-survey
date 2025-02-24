@@ -17,6 +17,7 @@ survey/__init__.py
 survey/admin.py
 survey/apps.py
 survey/exceptions.py
+survey/markup.py
 survey/models.py
 survey/signals.py
 survey/urls.py
